@@ -17,6 +17,12 @@ class TestMMFunctions < Minitest::Test
 	def test_match_returns_true
 		winner = ["4437", "2495", "3649", "4490", "3094", "2040"]
 	ticket = "4490"
-		assert_equal(["4490"],create_winning_numbers_array(winner,ticket))
+		assert_equal(["4490"], create_winning_numbers_array(winner,ticket))
+	end
+
+	def test_match_returns_true_2
+		winner = ["4406", "6609", "7635", "4404", "4400", "6007", "2004", "3003"]
+	ticket = "3003"
+		assert_equal(["3003"], create_winning_numbers_array(winner,ticket))
 	end
 end
