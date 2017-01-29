@@ -9,4 +9,8 @@ class TestMMFunctions < Minitest::Test
 	def test_different_number_returns_true
 		assert_equal(['True'], off_by_one(6247,6257))
 	end
+
+	def test_different_number_returns_false_2
+		assert_equal(['False'], off_by_one(5576,6577))
+	end
 end
